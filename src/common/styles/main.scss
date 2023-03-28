@@ -1,44 +1,48 @@
-@import 'variables';
-@import 'themes';
-@import 'fonts';
-@import 'mixins';
+@import "variables";
+@import "themes";
+@import "fonts";
+@import "mixins";
 
 // NORMALIZE
-@import './normalize.scss';
+@import "./normalize.scss";
 
 // COMMON COMPONENTS
-@import '../components/Button/button.scss';
-@import '../components/Switch/switch.scss';
-@import '../components/Logos/logos.scss';
-@import '../components/Link/link.scss';
-@import '../components/List/list.scss';
-@import '../components/AnimationBlock/animation-block.scss';
-@import '../components/Tabs/tabs.scss';
+@import "../components/Button/button.scss";
+@import "../components/Switch/switch.scss";
+@import "../components/Logos/logos.scss";
+@import "../components/Link/link.scss";
+@import "../components/List/list.scss";
+@import "../components/AnimationBlock/animation-block.scss";
+@import "../components/Tabs/tabs.scss";
+@import "../components/ButtonOption/buttonOption.scss";
 
 // COMPONENTS
-@import '../../App.scss';
-@import '../../components/Timeline/timeline.scss';
-@import '../../components/Sidebar/sidebar.scss';
-@import '../../components/Main/main.scss';
-@import '../../components/Title/title.scss';
-@import '../../components/Description/description.scss';
-@import '../../components/YoutubeInfo/youtube-info.scss';
-@import '../../components/Box/box.scss';
-@import '../../components/Footer/footer.scss';
-@import '../../components/Palette/palette.scss';
+@import "../../App.scss";
+@import "../../components/Timeline/timeline.scss";
+@import "../../components/Sidebar/sidebar.scss";
+@import "../../components/Main/main.scss";
+@import "../../components/Title/title.scss";
+@import "../../components/Description/description.scss";
+@import "../../components/YoutubeInfo/youtube-info.scss";
+@import "../../components/Box/box.scss";
+@import "../../components/Footer/footer.scss";
+@import "../../components/Palette/palette.scss";
+@import "../../components/Header/header.scss";
+@import "../../components/Menu/menu.scss";
 
 // PAGES
-@import '../../pages/Home/home.scss';
-@import '../../pages/WhoAmI/whoami.scss';
-@import '../../pages/WorkExperience/work-experience.scss';
-@import '../../pages/Youtube/youtube.scss';
-@import '../../pages/Projects/projects.scss';
+@import "../../pages/Home/home.scss";
+@import "../../pages/WhoAmI/whoami.scss";
+@import "../../pages/WorkExperience/work-experience.scss";
+@import "../../pages/Youtube/youtube.scss";
+@import "../../pages/Projects/projects.scss";
+@import "../../pages/Blog/blog.scss";
 
 // BASIC STYLES
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  @include themed(color, 'text');
-  @include themed(background-color, 'background');
+  font-family: "Inter", sans-serif;
+  @include themed(color, "text");
+  @include themed(background-color, "background");
 }

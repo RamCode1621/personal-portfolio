@@ -1,11 +1,11 @@
 export enum Theme {
-  DARK = 'dark',
-  LIGHT = 'light',
+  DARK = "dark",
+  LIGHT = "light",
 }
 
 export enum ThemeLogos {
-  DARK = '🌚',
-  LIGHT = '🌞',
+  DARK = "🌚",
+  LIGHT = "🌞",
 }
 
 export type ThemeState = {

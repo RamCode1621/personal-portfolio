@@ -24,7 +24,7 @@ $sidebar-padding: $spacing-small;
     place-items: center;
     font-weight: 800;
     letter-spacing: $spacing-small;
-    animation:none;
+    animation: none;
   }
 
   @include tablet-width() {

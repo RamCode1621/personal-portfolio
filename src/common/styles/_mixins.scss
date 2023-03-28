@@ -4,8 +4,8 @@
     display: inline-block;
   }
   &::before {
-    content: '';
-    @include themed-dots( $color1, $color2, $percentage);
+    content: "";
+    @include themed-dots($color1, $color2, $percentage);
     background-size: $size $size;
     height: 50%;
     width: 100%;
@@ -22,7 +22,7 @@
     position: relative;
   }
   &::after {
-    content: '';
+    content: "";
     @include dotted-background($color, transparent, 50%, $spacing-xxsmall);
     border-radius: 0 $border-radius $border-radius $border-radius;
     height: 100%;
@@ -38,7 +38,7 @@
 
 @mixin dotted-background($color1, $color2, $percentage, $size) {
   & {
-    @include themed-dots( $color1, $color2, $percentage);
+    @include themed-dots($color1, $color2, $percentage);
     background-size: $size $size;
   }
 }
@@ -48,7 +48,7 @@
   -webkit-background-clip: text;
   margin: $spacing-xxsmall 0;
   color: transparent;
-  @include themed-dots( $color1, $color2, $percentage);
+  @include themed-dots($color1, $color2, $percentage);
   background-size: $size $size;
 }
 
@@ -57,8 +57,8 @@
   padding: $spacing-small;
   border-radius: $border-radius;
   @include dotted-shadow(secondary);
-  @include themed-border('', 1px, dashed, secondary);
-  @include themed(background-color, background);  
+  @include themed-border("", 1px, dashed, secondary);
+  @include themed(background-color, background);
   margin-bottom: $spacing-regular;
 }
 // TODO: make themed
@@ -69,7 +69,7 @@
   color: transparent;
   background-image: repeating-conic-gradient(
     at 0% 100%,
-    #ee6c4d 0deg 5deg,
+    #64ffda 0deg 5deg,
     #3d5a80 10deg 15deg
   );
 }

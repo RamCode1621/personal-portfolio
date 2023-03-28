@@ -1,0 +1,21 @@
+.buttonOption {
+  @include themed(color, text);
+  padding: $spacing-regular;
+  // @include themed-border("", 1px, solid, text);
+  cursor: pointer;
+  width: fit-content;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 900;
+  border-radius: $border-radius;
+  transition: all $fast-animation;
+  margin: 0 $spacing-small;
+
+  &:hover {
+    @include themed(color, text);
+    @include themed(background, background);
+    left: -2px;
+    top: -2px;
+    @include dotted-shadow(primary, $spacing-xsmall);
+  }
+}

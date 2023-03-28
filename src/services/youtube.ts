@@ -1,8 +1,8 @@
-import axios from 'axios';
-import { YouTubeChannelData } from '../common/reducers/youtube/youtube-types';
-import { YoutubeServiceData } from './youtube-types';
+import axios from "axios";
+import { YouTubeChannelData } from "../common/reducers/youtube/youtube-types";
+import { YoutubeServiceData } from "./youtube-types";
 
-const URL = 'https://manuelbasanta.herokuapp.com/api/youtube/channel_info';
+const URL = "https://manuelbasanta.herokuapp.com/api/youtube/channel_info";
 
 const getChannelInfo = async (): Promise<YouTubeChannelData> => {
   const response = await axios.get<YoutubeServiceData>(URL);

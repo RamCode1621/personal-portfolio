@@ -1,0 +1,39 @@
+[debug] [2023-03-28T00:40:16.685Z] ----------------------------------------------------------------------
+[debug] [2023-03-28T00:40:16.688Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-03-28T00:40:16.689Z] CLI Version:   11.25.1
+[debug] [2023-03-28T00:40:16.689Z] Platform:      win32
+[debug] [2023-03-28T00:40:16.689Z] Node Version:  v16.14.2
+[debug] [2023-03-28T00:40:16.690Z] Time:          Mon Mar 27 2023 19:40:16 GMT-0500 (Colombia Standard Time)
+[debug] [2023-03-28T00:40:16.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-28T00:40:16.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-28T00:40:16.705Z] > authorizing via signed-in user (ridarlar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\richa\OneDrive\Documents\proyects\personal-portfolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-03-28T00:42:48.749Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-03-28T00:42:48.749Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"react-portfolio","name":"richard-portfolio"}
+[debug] [2023-03-28T00:42:49.502Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-03-28T00:42:49.502Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-03-28T00:42:49.710Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\richa\AppData\Roaming\nvm\v16.14.2\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\richa\AppData\Roaming\nvm\v16.14.2\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID react-portfolio. Please try again with a unique project ID.

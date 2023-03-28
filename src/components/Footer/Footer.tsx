@@ -1,12 +1,17 @@
-import React, { FC } from 'react';
-import Palette from '../Palette/Palette';
+import React, { FC } from "react";
+import Link from "../../common/components/Link/Link";
+import Palette from "../Palette/Palette";
 
 const Footer: FC = () => (
-  <footer className='footer'>
-    <div className='footer__container'>
-      { `Manuel Basanta © ${new Date().getFullYear()}` }
+  <footer className="footer">
+    <div className="footer__container">
+      {`Richard Aguilar © ${new Date().getFullYear()} `}
+      <b>
+        <Link href={"https://gabrielcodigo.com/#/dashboard/"}>
+          Gabriel Codigo
+        </Link>
+      </b>
       <Palette />
-      <p className='footer__credits'>Llama by Symbolon from NounProject.com</p>
     </div>
   </footer>
 );

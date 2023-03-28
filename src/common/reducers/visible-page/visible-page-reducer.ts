@@ -1,16 +1,17 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { PageVisibility, VisiblePageState } from './visible-page-types';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { PageVisibility, VisiblePageState } from "./visible-page-types";
 
 const initialState: VisiblePageState = {
   HOME: 0,
   EXPERIENCE: 0,
+  BLOG: 0,
   YOUTUBE: 0,
   WHOAMI: 0,
   PROJECTS: 0,
 };
 
 const visiblePageReducer = createSlice({
-  name: 'visible-page',
+  name: "visible-page",
   initialState,
   reducers: {
     setVisiblePage: (state, { payload }: PayloadAction<PageVisibility>) => {
