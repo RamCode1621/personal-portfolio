@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import { LogoSize } from '../../common/components/Logos/logos-types';
-import URL from '../../common/types/url-types';
+import { FC } from "react";
+import { LogoSize } from "../../common/components/Logos/logos-types";
+import URL from "../../common/types/url-types";
 
 export type BoxProps = {
   title: string;
@@ -8,5 +8,6 @@ export type BoxProps = {
   tags: string[];
   image: FC;
   imageSize: LogoSize;
-  url: URL;
+  url: URL | string;
+  internalLink: boolean;
 };

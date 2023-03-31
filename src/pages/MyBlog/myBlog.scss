@@ -1,0 +1,18 @@
+.myBlog {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__box-container {
+    margin-top: $spacing-large;
+    padding-top: $spacing-large;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet-width() {
+      justify-content: center;
+    }
+  }
+}

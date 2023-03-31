@@ -22,7 +22,7 @@ const YouTube = () => {
     freezeOnceVisible: true,
   });
   const dispatch = useAppDispatch();
-  const youtubeData = useSelector(selectYoutube());
+  // const youtubeData = useSelector(selectYoutube());
 
   useEffect(() => {
     dispatch(initializeYoutubeData());
@@ -35,10 +35,9 @@ const YouTube = () => {
         <p className="youtube__description">
           On my Youtube channel{" "}
           <b>
-            <Link href={URL.YOUTUBE}>Programación Accesible</Link>
+            <Link href={URL.YOUTUBE}> "Link to my channel "</Link>
           </b>{" "}
-          I share what I know about <b>frontend, coding and design</b> (in
-          Spanish).
+          I share what I know about <b>programming</b>.
         </p>
         <p className="youtube__description">
           It&apos;s a place where I can <b>help</b> others while I also{" "}
@@ -56,7 +55,10 @@ const YouTube = () => {
       >
         <div className="youtube__billboard youtube__billboard-right">
           <div className="youtube__billboard-content">
-            Programación Accesible ©
+            <img
+              src="https://imgs.search.brave.com/DwKXOjnINqg8e6_AYRFFweLLYth0LUeDFNP5oDpOPwc/rs:fit:400:300:1/g:ce/aHR0cHM6Ly93d3cu/d2FrZXRlY2guZWR1/L3NpdGVzL2RlZmF1/bHQvZmlsZXMvc3R5/bGVzLzE2eDlfbWRf/MV80MDBfeF8yNjVf/L3B1YmxpYy9wcm9n/cmFtLWltYWdlcy8x/Nng5L0NvbXB1dGVy/UHJvZ3JhbW1pbmcx/Nng5LmpwZz9pdG9r/PS12VzVqV2Mz"
+              alt="Computer programming"
+            />
           </div>
         </div>
       </div>

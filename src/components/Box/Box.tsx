@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
-import Link from '../../common/components/Link/Link';
-import { LinkTypes } from '../../common/components/Link/link-types';
-import Logo from '../../common/components/Logos/Logo';
-import { BoxProps } from './box-types';
+import React, { FC } from "react";
+import ExtarnalLink from "../../common/components/Link/Link";
+import { LinkTypes } from "../../common/components/Link/link-types";
+import Logo from "../../common/components/Logos/Logo";
+import { BoxProps } from "./box-types";
+import { Link } from "react-router-dom";
 
 const Box: FC<BoxProps> = ({
   title,
@@ -11,19 +12,42 @@ const Box: FC<BoxProps> = ({
   image,
   imageSize,
   url,
-}) => (
-  <Link href={url} type={LinkTypes.BUTTON}>
-    <div className='box__container'>
-      <div className='box__title-container'>
-        <Logo size={imageSize} image={image} />
-        <div className='box__title'>{title}</div>
+  internalLink,
+}) =>
+  !internalLink ? (
+    <ExtarnalLink href={url} type={LinkTypes.BUTTON}>
+      <div className="box__container">
+        <div className="box__title-container">
+          <Logo size={imageSize} image={image} />
+          <div className="box__title">{title}</div>
+        </div>
+        <div className="box__description">{description}</div>
+        <div className="box__tags">
+          {tags.map((tag) => (
+            <div key={tag} className="box__tag">
+              {tag}
+            </div>
+          ))}
+        </div>
       </div>
-      <div className='box__description'>{description}</div>
-      <div className='box__tags'>
-        {tags.map((tag) => <div key={tag} className='box__tag'>{tag}</div>)}
+    </ExtarnalLink>
+  ) : (
+    <Link to={url}>
+      <div className="box__container">
+        <div className="box__title-container">
+          <Logo size={imageSize} image={image} />
+          <div className="box__title">{title}</div>
+        </div>
+        <div className="box__description">{description}</div>
+        <div className="box__tags">
+          {tags.map((tag) => (
+            <div key={tag} className="box__tag">
+              {tag}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  </Link>
-);
+    </Link>
+  );
 
 export default Box;

@@ -28,6 +28,10 @@
       align-items: center;
       font-size: 22px;
       text-align: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -67,14 +71,20 @@
 
   .link {
     font-style: italic;
-    @include themed(color, primary);  
+    @include themed(color, primary);
   }
 }
 
 @mixin billboard-animation($billboard-size, $left-position, $font-size) {
-  clip-path: polygon(#{$billboard-size / 2} 0px, $billboard-size #{$billboard-size / 2}, $billboard-size $billboard-size, #{$billboard-size / 2} $billboard-size, 0px #{$billboard-size / 2}, 0px 0px);
+  clip-path: polygon(
+    #{$billboard-size / 2} 0px,
+    $billboard-size #{$billboard-size / 2},
+    $billboard-size $billboard-size,
+    #{$billboard-size / 2} $billboard-size,
+    0px #{$billboard-size / 2},
+    0px 0px
+  );
   @include dotted-background(primary, background, 80%, $spacing-small);
-
 
   &-content {
     @include themed(background-color, background);
@@ -97,7 +107,6 @@
     @include dotted-background(secondary, background, 80%, $spacing-small);
   }
 
-
   @keyframes grow-right {
     0% {
       min-width: #{$billboard-size / 2};
@@ -110,7 +119,6 @@
     }
   }
 
-
   @keyframes grow-left {
     0% {
       min-width: #{$billboard-size / 2 - 100px};
@@ -119,11 +127,10 @@
 
     100% {
       min-width: #{$billboard-size - 100px};
-      min-height:  #{$billboard-size - 100px};
+      min-height: #{$billboard-size - 100px};
     }
   }
 }
-
 
 .youtube__billboard {
   min-width: 250px;

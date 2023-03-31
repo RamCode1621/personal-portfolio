@@ -1,10 +1,9 @@
 .buttonOption {
   @include themed(color, text);
   padding: $spacing-regular;
-  // @include themed-border("", 1px, solid, text);
   cursor: pointer;
   width: fit-content;
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   font-weight: 900;
   border-radius: $border-radius;

@@ -8,20 +8,19 @@
     border-radius: $border-radius;
     @include dotted-shadow(primary, 0px);
     @include themed(background-color, background);
-    @include themed-border('', 1px, dashed, primary);
+    @include themed-border("", 1px, dashed, primary);
     margin: $spacing-regular;
     transition: all $fast-animation;
     padding: $spacing-regular;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
     &:hover {
       left: -2px;
       top: -2px;
       @include dotted-shadow(primary, $spacing-xsmall);
     }
-  
 
     .logo {
       float: right;
@@ -30,6 +29,8 @@
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   &__tag {

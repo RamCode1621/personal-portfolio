@@ -17,45 +17,50 @@ const Projects = () => {
       <Title title="Some projects" subtitle="that I have been working on" />
       <div className="projects__box-container">
         <Box
-          title="react-typescript bolierplate"
-          description="Boilerplate with the basic structure for a web app using React and Typescript."
-          tags={["Typescript", "SASS", "React", "Webpack"]}
+          title="Web sockets API"
+          description="In this backend project I used Nestjs creating a service web sockets for it's use in a chat app."
+          tags={["Typescript", "Nestjs", "Websockets"]}
           image={GitHubLogo}
-          imageSize={LogoSize.XSMALL}
-          url={URL.TYPESCRIPT_BOLIERPLATE}
-        />
-        <Box
-          title="Catalogo de posibilidades exitosas"
-          description="An installation that generates unique art for every interaction using augmented reality."
-          tags={["Javascript", "A-frame"]}
-          image={VimeoLogo}
           imageSize={LogoSize.SMALL}
-          url={URL.CATALOGO}
+          url={URL.WEBSOCKETS_API_REPO}
+          internalLink={false}
         />
         <Box
-          title="Human Voting System"
-          description="Voting Dapp supported by Ethereum blockchain, supporting Proof of humanity validation for voters."
-          tags={["Solidity", "Javascript"]}
+          title="Out chat"
+          description="This frontend aplication was created using React and web sockets, it's a chat app."
+          tags={["Typescript", "ReactJs", "Websockets", "Redux"]}
           image={GitHubLogo}
-          imageSize={LogoSize.XSMALL}
+          imageSize={LogoSize.SMALL}
+          url={URL.OUR_CHAT_REPO}
+          internalLink={false}
+        />
+        <Box
+          title="EcuadorianFoods"
+          description="Mobile application for watch recipes of ecuadorian foods."
+          tags={["Typecript", "React-Native", "Redux"]}
+          image={GitHubLogo}
+          imageSize={LogoSize.SMALL}
           url={URL.HVS}
+          internalLink={false}
         />
         <Box
-          title="Programación Accesible"
-          description="Github profile containing several projects created for my Youtube channel."
-          tags={["Javascript", "React"]}
+          title="Waifu app"
+          description="This is a web application for watch ramdom images of waifus for categories."
+          tags={["Typescript", "ReactJs", "Redux"]}
           image={GitHubLogo}
-          imageSize={LogoSize.XSMALL}
-          url={URL.PROGRAMACION_ACCESIBLE}
+          imageSize={LogoSize.SMALL}
+          url={URL.WAIFU_APP_REPO}
+          internalLink={false}
         />
-        {/* <Box
-          title="My website"
-          description="This very same website, take a look under the hood."
-          tags={["Typescript", "React", "Sass"]}
+        <Box
+          title="PokeWeb"
+          description="This is a web application for watch information of pokemons."
+          tags={["JavaScript", "React", "Firebase"]}
           image={GitHubLogo}
-          imageSize={LogoSize.XSMALL}
-          url={URL.PORTFOLIO}
-        /> */}
+          imageSize={LogoSize.SMALL}
+          url={URL.POCKECTDEX_REPO}
+          internalLink={false}
+        />
       </div>
     </div>
   );

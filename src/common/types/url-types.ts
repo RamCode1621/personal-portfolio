@@ -6,11 +6,11 @@ enum URL {
   // GCBA = "https://www.buenosaires.gob.ar",
   TINKIN = "https://www.tinkin.one/",
   MAIL = "richard.aguilar.2020@hotmail.com",
-  TYPESCRIPT_BOLIERPLATE = "https://github.com/manuelbasanta/react-typescript-bolierplate",
-  CATALOGO = "https://vimeo.com/317810816",
+  WEBSOCKETS_API_REPO = "https://github.com/RamCode1621/WebSocketApi",
+  OUR_CHAT_REPO = "https://github.com/RamCode1621/our-chat",
   HVS = "https://github.com/manuelbasanta/HumanVotingSystem",
-  PROGRAMACION_ACCESIBLE = "https://github.com/accesibleprogramacion",
-  PORTFOLIO = "http://richard-aguilar.com/",
+  WAIFU_APP_REPO = "https://github.com/RamCode1621/WaifuApp",
+  POCKECTDEX_REPO = "https://github.com/RamCode1621/Pokedex",
 }
 
 export default URL;

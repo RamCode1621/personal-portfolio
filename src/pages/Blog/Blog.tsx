@@ -1,17 +1,13 @@
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
+import React, { useRef } from "react";
 import Button from "../../common/components/Button/Button";
 import Link from "../../common/components/Link/Link";
 import { LinkTypes } from "../../common/components/Link/link-types";
-import useAppDispatch from "../../common/hooks/useAppDispatch";
 import useIntersectionObserver from "../../common/hooks/useIntersectionObserver";
 import useVisiblePage from "../../common/hooks/useVisiblePage";
 import { Page } from "../../common/reducers/visible-page/visible-page-types";
-import { initializeYoutubeData } from "../../common/reducers/youtube/youtube-reducer";
-import selectYoutube from "../../common/reducers/youtube/youtube-selectors";
-import URL from "../../common/types/url-types";
+
 import Title from "../../components/Title/Title";
 
 const Blog = () => {
@@ -47,7 +43,10 @@ const Blog = () => {
       >
         <div className="blog__billboard blog__billboard-right">
           <div className="blog__billboard-content">
-            Programación Accesible ©
+            <img
+              src="https://imgs.search.brave.com/T-tw3-kd1-cGF9VslX67G6QBNDI8apjyLz2KTR2McT8/rs:fit:1100:843:1/g:ce/aHR0cHM6Ly93d3cu/Z2lsbHNvbHV0aW9u/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTcvMTIvYmxv/Zy10by1pbXByb3Zl/LXNlby1yZXN1bHRz/LmpwZWc"
+              alt="blog"
+            />
           </div>
         </div>
       </div>
