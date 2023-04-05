@@ -2,11 +2,13 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useRef } from "react";
 import Button from "../../common/components/Button/Button";
-import Link from "../../common/components/Link/Link";
+import LinkComponent from "../../common/components/Link/Link";
 import { LinkTypes } from "../../common/components/Link/link-types";
 import useIntersectionObserver from "../../common/hooks/useIntersectionObserver";
 import useVisiblePage from "../../common/hooks/useVisiblePage";
 import { Page } from "../../common/reducers/visible-page/visible-page-types";
+// import { Link } from "react-router-dom";
+import ButtonOption from "../../common/components/ButtonOption/ButtonOption";
 
 import Title from "../../components/Title/Title";
 
@@ -32,9 +34,9 @@ const Blog = () => {
           <b>learn</b> new stuff and get to practice what I already know. Wanna
           have a look?
         </p>
-        <Link href={"#"} type={LinkTypes.BUTTON}>
-          <Button label="Visit my Youtube channel" />
-        </Link>
+        <LinkComponent href={"/blog"} type={LinkTypes.INTERNAL}>
+          <Button label="Visit my blog" />
+        </LinkComponent>
       </div>
       <div
         ref={animationRef}

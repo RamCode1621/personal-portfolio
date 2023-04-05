@@ -6,11 +6,11 @@ const Menu: FC = () => {
   // const { handleScroll } = useAutoScroll();
   return (
     <div className="menu">
-      <ButtonOption label="Wellcome" path="/" />
+      <ButtonOption label="Wellcome" path="/" type="optionMenu" />
       {/* <ButtonOption label="About me" path="" />
       <ButtonOption label="My experience" path="" />
       <ButtonOption label="My projects" path="" /> */}
-      <ButtonOption label="Blog" path="/blog" />
+      <ButtonOption label="Blog" path="/blog" type="optionMenu" />
     </div>
   );
 };

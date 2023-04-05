@@ -1,18 +1,18 @@
-import React, { FC } from 'react';
-import { LinkProps, LinkTypes } from './link-types';
+import React, { FC } from "react";
+import { LinkProps, LinkTypes } from "./link-types";
 
 const Link: FC<LinkProps> = ({
   children,
   href,
   type = LinkTypes.REGULAR,
-  target = '_blank',
+  target = "_blank",
 }) => (
   <a
-    className='link'
+    className="link"
     target={target}
     href={href}
     data-type={type}
-    {...(target === '_blank' && { rel: 'noreferrer' })}
+    {...(target === "_blank" && { rel: "noreferrer" })}
   >
     {children}
   </a>

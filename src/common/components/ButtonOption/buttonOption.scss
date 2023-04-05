@@ -10,6 +10,17 @@
   transition: all $fast-animation;
   margin: 0 $spacing-small;
 
+  &:type-button {
+    border: none;
+    background: none;
+  }
+
+  &:type-link {
+    border: none;
+    background: none;
+    text-decoration: underline;
+  }
+
   &:hover {
     @include themed(color, text);
     @include themed(background, background);

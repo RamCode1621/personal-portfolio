@@ -1,13 +1,14 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 export enum LinkTypes {
-  REGULAR = 'regular',
-  BUTTON = 'button'
+  REGULAR = "regular",
+  BUTTON = "button",
+  INTERNAL = "internal",
 }
 
 export type LinkProps = {
   href: string;
   children: ReactNode;
-  target?: '_self' | '_blank';
-  type?: LinkTypes
+  target?: "_self" | "_blank";
+  type?: LinkTypes;
 };
